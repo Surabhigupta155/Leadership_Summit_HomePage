@@ -1,102 +1,147 @@
-import * as React from 'react';
-import Timeline from '@material-ui/lab/Timeline';
-import TimelineItem from '@material-ui/lab/TimelineItem';
-import TimelineSeparator from '@material-ui/lab/TimelineSeparator';
-import TimelineConnector from '@material-ui/lab/TimelineConnector';
-import TimelineContent from '@material-ui/lab/TimelineContent';
-import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
-import TimelineDot from '@material-ui/lab/TimelineDot';
-import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import Typography from '@material-ui/core/Typography';
-
-import '../Components.css';
-import card from '../images/card.jpg';
-import ScrollAnimation from 'react-animate-on-scroll';
+import * as React from "react";
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
+import { useTheme } from "@mui/material/styles";
+import LaptopMacIcon from "@material-ui/icons/LaptopMac";
+import Typography from "@material-ui/core/Typography";
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import "../Components.css";
+import card from "../images/card.jpg";
+import ScrollAnimation from "react-animate-on-scroll";
 
 export default function Timeline_() {
-    return (
-        <div>
-            <section id="timeline">
-                <div className="container-fluid">
-                    <ScrollAnimation animateIn="fadeInDown">
-                        <div className="text-center heading mb-lg-5 mb-md-5 mb-4">Timeline</div>
-                    </ScrollAnimation>
-                    <div className="row justify-content-center align-items-center mx-0">
-                        <div className="col-md-4 col1">
-                            <ScrollAnimation animateIn="fadeInLeft">
-                                <Timeline>
-                                    <TimelineItem>
-                                        <TimelineSeparator>
-                                            <TimelineConnector />
-                                            <TimelineDot color="primary">
-                                                <LaptopMacIcon />
-                                            </TimelineDot>
-                                            <TimelineConnector />
-                                        </TimelineSeparator>
-                                        <TimelineContent >
-                                            <Typography variant="h6" component="span">
-                                                Something
-                                            </Typography>
-                                            <Typography>Something Lorem Ipsum</Typography>
-                                        </TimelineContent>
-                                    </TimelineItem>
-                                    <TimelineItem>
-                                        <TimelineSeparator>
-                                            <TimelineConnector />
-                                            <TimelineDot color="primary">
-                                                <LaptopMacIcon />
-                                            </TimelineDot>
-                                            <TimelineConnector />
-                                        </TimelineSeparator>
-                                        <TimelineContent>
-                                            <Typography variant="h6" component="span">
-                                                Something
-                                            </Typography>
-                                            <Typography>Something Lorem Ipsum</Typography>
-                                        </TimelineContent>
-                                    </TimelineItem>
-                                    <TimelineItem>
-                                        <TimelineSeparator>
-                                            <TimelineConnector />
-                                            <TimelineDot color="primary">
-                                                <LaptopMacIcon />
-                                            </TimelineDot>
-                                            <TimelineConnector />
-                                        </TimelineSeparator>
-                                        <TimelineContent>
-                                            <Typography variant="h6" component="span">
-                                                Something
-                                            </Typography>
-                                            <Typography>Something Lorem Ipsum</Typography>
-                                        </TimelineContent>
-                                    </TimelineItem>
-                                    <TimelineItem>
-                                        <TimelineSeparator>
-                                            <TimelineConnector />
-                                            <TimelineDot color="primary">
-                                                <LaptopMacIcon />
-                                            </TimelineDot>
-                                            <TimelineConnector />
-                                        </TimelineSeparator>
-                                        <TimelineContent>
-                                            <Typography variant="h6" component="span">
-                                                Something
-                                            </Typography>
-                                            <Typography>Something Lorem Ipsum</Typography>
-                                        </TimelineContent>
-                                    </TimelineItem>
-                                </Timeline>
-                            </ScrollAnimation>
-                        </div>
-                        <div className="col-lg-6 col-md-8 col2">
-                            <ScrollAnimation animateIn="fadeInRight">
-                                <img src={card}></img>
-                            </ScrollAnimation>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+  const theme = useTheme();
+  return (
+    <div>
+      <section id="timeline">
+        <div className="container-fluid">
+          <ScrollAnimation animateIn="fadeInDown">
+            <div className="text-center heading mb-lg-5 mb-md-5 mb-4">
+              Timeline
+            </div>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="fadeInLeft">
+            <Timeline position="alternate">
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot color="primary">
+                    <LaptopMacIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Card sx={{ display: "flex",float:'left', maxWidth: 300 }}>
+                    <Box sx={{ display: "flex", flexDirection: "column" }}>
+                      <CardContent sx={{ flex: "1 0 auto" }}>
+                        <Typography component="div" variant="h5">
+                          Live From Space
+                        </Typography>
+                        <Typography
+                          variant="subtitle1"
+                          color="text.secondary"
+                          component="div"
+                        >
+                          Mac Miller
+                        </Typography>
+                      </CardContent>
+                    </Box>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot color="primary">
+                    <LaptopMacIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Card sx={{ display: "flex", float:"right", maxWidth: 300 }}>
+                    <Box sx={{ display: "flex", flexDirection: "column" }}>
+                      <CardContent sx={{ flex: "1 0 auto" }}>
+                        <Typography component="div" variant="h5">
+                          Live From Space
+                        </Typography>
+                        <Typography
+                          variant="subtitle1"
+                          color="text.secondary"
+                          component="div"
+                        >
+                          Mac Miller
+                        </Typography>
+                      </CardContent>
+                    </Box>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot color="primary">
+                    <LaptopMacIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Card sx={{ display: "flex",float:'left', maxWidth: 300 }}>
+                    <Box sx={{ display: "flex", flexDirection: "column" }}>
+                      <CardContent sx={{ flex: "1 0 auto" }}>
+                        <Typography component="div" variant="h5">
+                          Live From Space
+                        </Typography>
+                        <Typography
+                          variant="subtitle1"
+                          color="text.secondary"
+                          component="div"
+                        >
+                          Mac Miller
+                        </Typography>
+                      </CardContent>
+                    </Box>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot color="primary">
+                    <LaptopMacIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Card sx={{ maxWidth: 300, float:'right', display: "flex", }}>
+                    <Box sx={{ display: "flex", flexDirection: "column" }}>
+                      <CardContent sx={{ flex: "1 0 auto" }}>
+                        <Typography component="div" variant="h5">
+                          Live From Space
+                        </Typography>
+                        <Typography
+                          variant="subtitle1"
+                          color="text.secondary"
+                          component="div"
+                        >
+                          Mac Miller
+                        </Typography>
+                      </CardContent>
+                    </Box>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+            </Timeline>
+          </ScrollAnimation>
         </div>
-    )
+      </section>
+    </div>
+  );
 }
