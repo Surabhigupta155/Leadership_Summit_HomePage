@@ -1,7 +1,13 @@
 /*navbar*/
 nav {
     box-shadow: 0 0 5px gray;
-    background: rgb(248, 239, 222);
+}
+.navbar{
+    background-color: transparent;
+}
+  
+.navbar.colorChange{
+    background-color: rgb(248, 239, 222);
 }
 
 nav .navbar-brand {
@@ -11,6 +17,7 @@ nav .navbar-brand {
 
 nav .nav-item {
     font-size: calc(100% + 0.1vw + 0.1vh);
+    font-weight: 600;
 }
 
 /* footer*/
@@ -124,8 +131,32 @@ footer .row1 p {
 
 /*landing page*/
 
+.arrow {
+    position: absolute;
+    bottom: 100px;
+    border: 3px solid white;
+    border-radius: 100%;
+    color: white;
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
 .heroimage {
-    height: 90vh;
+    height: 100vh;
     width: auto;
     position: relative;
     background-size:cover;
@@ -176,12 +207,36 @@ footer .row1 p {
     color: rgb(71, 71, 71);
 }
 
+#aboutus .circle {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(250, 198, 232);
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 992px) {
     #aboutus h1 {
         margin-bottom: 5%;
     }
     #aboutus p {
         text-align: center;
+    }
+    #aboutus .circle {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #aboutus h1 {
+        z-index: 1; 
+        position: absolute;
+        left: 150px;
+        top: 100px;
+    }
+    #aboutus .circle {
+        position: relative;
     }
 }
 

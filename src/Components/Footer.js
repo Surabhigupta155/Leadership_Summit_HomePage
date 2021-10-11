@@ -18,22 +18,6 @@ export default function Footer() {
                     <div className='col-md-4'>
                         <div className='row'>
                             <div className='col-md-6'>
-                                <div>
-                                    <ul className='list-unstyled link-group'>
-                                        <li className='mb-2'>
-                                            <Link href='' className='text-decoration-none'>
-                                                About
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href='' className='text-decoration-none'>
-                                                Team
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className='col-md-6'>
                                 <p className='link-group-heading'>Contact Us</p>
                                 <ul className='list-unstyled link-group'>
                                     <li>
@@ -46,22 +30,22 @@ export default function Footer() {
                                     <li className='mt-2 d-flex'>
                                         <Link href='' role='button' target='_blank'>
                                             <span className='me-2'>
-                                                <InstagramIcon className='social-icons'/>
+                                                <InstagramIcon className='social-icons' />
                                             </span>
                                         </Link>
                                         <Link href='' role='button' target='_blank'>
                                             <span className='me-2'>
-                                                <FacebookIcon className='social-icons'/>
+                                                <FacebookIcon className='social-icons' />
                                             </span>
                                         </Link>
                                         <Link href='' role='button' target='_blank'>
                                             <span className='me-2'>
-                                                <LinkedInIcon className='social-icons'/>
+                                                <LinkedInIcon className='social-icons' />
                                             </span>
                                         </Link>
                                         <Link href='' role='button' target='_blank'>
                                             <span className='me-2'>
-                                                <TwitterIcon className='social-icons'/>
+                                                <TwitterIcon className='social-icons' />
                                             </span>
                                         </Link>
                                     </li>

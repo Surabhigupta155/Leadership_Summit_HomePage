@@ -4,9 +4,19 @@ import {Link} from "react-router-dom";
 import '../Components.css';
 
 export default function Header() {
+    const [colorChange, setColorchange] = React.useState(false);
+    const changeNavbarColor = () => {
+        if (window.scrollY >= 700) {
+            setColorchange(true);
+        }
+        else {
+            setColorchange(false);
+        }
+    };
+    window.addEventListener('scroll', changeNavbarColor);
     return (
         <div>
-            <nav className="navbar navbar-expand-md navbar-light fixed-top px-md-5">
+            <nav className= {colorChange ? 'navbar colorChange navbar-expand-lg navbar-light fixed-top px-md-5' : 'navbar navbar-expand-lg navbar-light fixed-top px-md-5'}>
                 <div className="container-fluid pb-0">
                     <Link className="navbar-brand" to="/">Leadership Summit</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,8 +30,11 @@ export default function Header() {
                             <li className="nav-item mx-md-4">
                                 <Link className="nav-link" to="">About</Link>
                             </li>
-                            <li className="nav-item mx-md-2">
-                                <Link className="nav-link" to="">Contact Us</Link>
+                            <li className="nav-item mx-md-3">
+                                <Link className="nav-link" aria-current="page" to="">Theme</Link>
+                            </li>
+                            <li className="nav-item mx-md-3">
+                                <Link className="nav-link" aria-current="page" to="">Registration</Link>
                             </li>
                         </ul>
                     </div>
