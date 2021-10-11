@@ -9,9 +9,28 @@ import ScrollAnimation from "react-animate-on-scroll";
 export default function Registration() {
   return (
     <div>
-      <section>
+      <section id="regsform">
         <div className="container-fluid">
-          <ScrollAnimation animateIn="fadeInDown">
+          <div className="row justify-content-center align-items-center">
+            <ScrollAnimation animateIn="fadeInDown">
+              <h1 className="text-center mb-lg-5 mb-md-5 mb-4">Registration Form</h1>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="fadeInLeft">
+              <div className="justify-content-center align-items-center">
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSdPMQ-KiaUjtAFYN3mL4RMvhJBJWE0y-3DkhhcVzNLQOzcjkw/viewform?embedded=true"
+                  width="100%"
+                  height="1600"
+                  frameborder="0"
+                  marginheight="0"
+                  marginwidth="-2%"
+                >
+                  Loading…
+                </iframe>
+              </div>
+            </ScrollAnimation>
+          </div>
+          {/* <ScrollAnimation animateIn="fadeInDown">
             <div className="text-center heading mb-lg-5 mb-md-5 mb-4">
               {" "}
               <h1>Registration Form</h1>
@@ -39,7 +58,7 @@ export default function Registration() {
                 </iframe>
               </ScrollAnimation>
             </Grid>
-          </Grid>
+          </Grid> */}
           
           {/* <div className="justify-content-center align-items-center mx-0">
                             <div>

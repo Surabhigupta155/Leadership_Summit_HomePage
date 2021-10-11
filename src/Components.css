@@ -64,13 +64,12 @@ footer .row1 p {
 
 /*Team*/
 #Team .heading {
-    font-size: calc(100% + 1vw + 1vh);
+    font-size: calc(100% + 1.5vw + 1.5vh);
     font-weight: 600;
-    margin-top: 50px;
 }
 
 #Team .container-fluid {
-    padding: 0 13%;
+    padding: 2% 13%;
 }
 
 #Team .card {
@@ -92,12 +91,12 @@ footer .row1 p {
     overflow-x: hidden;
 }
 
- .container-fluid {
-    padding-bottom: 3%;
+#timeline .container-fluid {
+    padding: 4% 7% 7% 7%;
 }
 
 #timeline .heading {
-    font-size: calc(100% + 1vw + 1vh);
+    font-size: calc(100% + 1.5vw + 1.5vh);
     font-weight: 600;
 }
 
@@ -108,6 +107,9 @@ footer .row1 p {
 @media screen and (max-width: 992px) {
     #timeline .row {
         padding-left: 10%;
+    }
+    #timeline .container-fluid {
+        padding: 7%;
     }
 }
 
@@ -120,8 +122,10 @@ footer .row1 p {
     }
 }
 
+/*landing page*/
+
 .heroimage {
-    height: 100vh;
+    height: 90vh;
     width: auto;
     position: relative;
     background-size:cover;
@@ -142,3 +146,151 @@ footer .row1 p {
       justify-content: center;
       flex-direction: column;
   }
+
+.overlay h1 {
+    font-size: calc(100% + 4vw + 4vh);
+    font-weight: bold;
+    text-shadow: 3px 3px 3px black;
+}
+
+@media screen and (max-width: 576px) {
+    .overlay {
+        padding: 0 10px;
+        text-align: center;
+    }
+}
+
+/*aboutus*/
+#aboutus .container-fluid {
+    padding: 7%;
+}
+
+#aboutus h1 {
+    font-size: calc(100% + 1.5vw + 1.5vh);
+    font-weight: 600;
+}
+
+#aboutus p {
+    font-size: calc(100% + 0.2vw + 0.2vh);
+    font-weight: 600;
+    color: rgb(71, 71, 71);
+}
+
+@media screen and (max-width: 992px) {
+    #aboutus h1 {
+        margin-bottom: 5%;
+    }
+    #aboutus p {
+        text-align: center;
+    }
+}
+
+/*whatwedo*/
+#whatwedo .container-fluid {
+    padding: 7%;
+}
+
+#whatwedo img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+#whatwedo h1 {
+    font-size: calc(100% + 1.5vw + 1.5vh);
+    font-weight: 600;
+}
+
+#whatwedo p {
+    font-size: calc(100% + 0.2vw + 0.2vh);
+    font-weight: 600;
+    color: rgb(71, 71, 71);
+}
+
+@media screen and (max-width: 992px) {
+    #whatwedo p {
+        text-align: center;
+    }
+}
+
+/*theme*/
+#theme .container-fluid {
+    padding: 7%;
+}
+
+#theme h1 {
+    font-size: calc(100% + 1.5vw + 1.5vh);
+    font-weight: 600;
+}
+
+#theme p {
+    font-size: calc(100% + 0.2vw + 0.2vh);
+    font-weight: 600;
+    color: rgb(71, 71, 71);
+}
+
+#theme .agenda {
+    font-size: calc(100% + 0.2vw + 0.2vh);
+}
+
+#theme .agendadesc {
+    font-size: calc(80% + 0.1vw + 0.1vh);
+}
+
+@media screen and (max-width: 992px) {
+    #theme h1 {
+        text-align: center;
+    }
+    #theme p {
+        text-align: center;
+    }
+}
+
+/*registeration form*/
+#regsform .container-fluid {
+    padding: 7%;
+}
+
+#regsform h1 {
+    font-size: calc(100% + 1.5vw + 1.5vh);
+    font-weight: 600;
+}
+
+#regsform p {
+    font-size: calc(100% + 0.2vw + 0.2vh);
+    font-weight: 600;
+    color: rgb(71, 71, 71);
+}
+
+@media screen and (max-width: 992px) {
+    #regsform p {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #regsform .container-fluid {
+        padding-bottom: 0%;
+    }
+}
+
+/*FAQ*/
+#FAQ .container-fluid {
+    padding: 7%;
+}
+
+#FAQ h1 {
+    font-size: calc(100% + 1.5vw + 1.5vh);
+    font-weight: 600;
+}
+
+#FAQ p {
+    font-size: calc(100% + 0.2vw + 0.2vh);
+    font-weight: 600;
+    color: rgb(71, 71, 71);
+}
+
+@media screen and (min-width: 768px) {
+    #FAQ .container-fluid {
+        padding-top: 4%;
+    }
+}
