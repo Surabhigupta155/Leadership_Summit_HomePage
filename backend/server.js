@@ -25,8 +25,8 @@ mongoose.connect( process.env.DATABASE_ACCESS,{
   let transporter = nodemailer.createTransport({
     service:'gmail',
     auth: {
-        user: 'bhavya132@gmail.com',
-        pass: '@Mani132'
+        user:process.env.SENDER_EMAIL,
+        pass: process.env.SENDER_PASS
     }
 });
 
@@ -35,13 +35,13 @@ mongoose.connect( process.env.DATABASE_ACCESS,{
     let html=await readFile(path.join(__dirname,'index.html'), 'utf8')
     var template = handlebars.compile(html);
     var replacements = {
-         name: data.fullname
+        name: data.fullName
     };
     var htmlToSend = template(replacements);
-
+  
     const mailOptions={
-        from:'bhavya132@gmail.com',
-        to:['bhavytaggarwal@gmail.com','2019uce0056@iitjammu.ac.in'],
+        from:process.env.SENDER_EMAIL,
+        to:[data.email],
         subject:"Thanks for Registeration",
         html:htmlToSend
     };
@@ -60,12 +60,12 @@ app.use(express.json())
 app.use(cors())
 app.post('/signup',async (request,res)=>{
 
-    console.log("======================")
-    console.log(request.body)
+  
     const user = await signUpTemplateCopy.find({number:request.body.number});
+    const user1 = await signUpTemplateCopy.find({email:request.body.email});
     // console.log(user.length)
-    if(user.length!=0){
-       res.status(401).send("User with this number already exists")
+    if(user.length!=0 || user1.length!=0 ){
+       return res.status(401).send("User with this number already exists")
     } 
     else{
     const signedUpUser = new signUpTemplateCopy({

@@ -359,11 +359,20 @@ footer .row1 p {
 
 }
 
-.form {
+form {
     max-width: 800px;
     margin: 0 0;
   }
   
+  form p {
+    color: #bf1650;
+  }
+  
+  form p::before {
+    display: inline;
+    content: "⚠ ";
+  }
+
   .p {
     color: #bf1650;
     text-align: center;
