@@ -20,6 +20,7 @@ import Theme from './Theme';
 import Team from './Team';
 import Timeline_ from './Timeline';
 import Registration from './Registration Form';
+import RegisterForm from './Register'
 import FAQ from './FAQ';
 export default function Herobg() {
     return (
@@ -29,9 +30,10 @@ export default function Herobg() {
             <AboutUs />
             <WhatWeDo />
             <Theme/>
+            {/* <RegisterForm/> */}
             <Timeline_ />
             <Team />
-            <Registration />
+            
             <FAQ/>
             </div>
         </div>

@@ -12,9 +12,9 @@ export default function AboutUs() {
                         <div className="row justify-content-center align-items-center">
                             <div className="col-lg-6">
                                 <ScrollAnimation animateIn="fadeInLeft">
-                                    <h1 className="text-center">About Us</h1>
-                                    <div class="circle">
-                                    </div>
+                                    <h1 >About Us</h1>
+                                    {/* <div class="circle">
+                                    </div> */}
                                 </ScrollAnimation>
                             </div>
                             <div className="col-lg-6">

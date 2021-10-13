@@ -7,7 +7,7 @@ import Icon from "@material-ui/core/Icon";
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import AboutUs from './AboutUs';
 // @material-ui/icons
-
+import RegisterForm from './Register'
 // core components
 
 
@@ -29,9 +29,13 @@ export default function SectionHome() {
     <div className="heroimage">
         <div className="overlay">
             <h1>Vidwan Sabha</h1>
+
             <a href="#aboutus">
               <ArrowDownwardIcon fontSize={"large"} className="arrow bounce"/>
             </a>
+            <div>
+              <img src="./images/leader.png" alt="" />
+            </div>
         </div>
     </div>
   );
