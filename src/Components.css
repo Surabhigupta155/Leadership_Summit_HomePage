@@ -3,10 +3,12 @@ nav {
     box-shadow: 0 0 5px gray;
 }
 .navbar{
+    opacity: 0;
     background-color: transparent;
 }
   
 .navbar.colorChange{
+    opacity: 100;
     background-color: #feffff;
 }
 
@@ -100,7 +102,9 @@ footer .row1 p {
 
 #timeline .container-fluid {
     padding: 4% 7% 7% 7%;
+    background-color: #cadfdc;
 }
+
 
 #timeline .heading {
     font-size: calc(100% + 1.5vw + 1.5vh);
@@ -158,10 +162,11 @@ footer .row1 p {
 .heroimage {
     height: 100vh;
     width: auto;
-    position: relative;
-    /* background-size:cover; */
-    /* background-position: left;
-    background-image: url("./images/leader.png"); */
+  
+    margin: auto;
+    background-size:cover; 
+    background-position: centre;
+    background-image: url("./images/Leadership.jpg");
   }
 
   .overlay{
@@ -171,9 +176,10 @@ footer .row1 p {
       /* top:0;
       left:0; */
       /* background:rgba(0,0,0,0.35); */
+      padding-top: -15%;
       color:white;
       display: flex;
-      align-items: left;
+      align-items: center;
       justify-content: center;
       flex-direction: column;
   }
@@ -182,6 +188,7 @@ footer .row1 p {
     font-size: calc(100% + 4vw + 4vh);
     font-weight: bold;
     text-shadow: 3px 3px 3px black;
+    margin-top:-20%;
 }
 
 @media screen and (max-width: 576px) {
@@ -208,15 +215,26 @@ footer .row1 p {
     color: rgb(71, 71, 71);
 }
 
+#aboutus .text_circle2{
+    opacity:0
+}
 #aboutus .circle {
     display: flex;
+    align-items:center;
+    justify-content: right;
     width: 300px;
     height: 300px;
     background-color: rgb(250, 198, 232);
     border-radius: 50%;
 }
-
+#aboutus h1{
+   margin-left: 25%;
+}
 @media screen and (max-width: 992px) {
+    #aboutus .text_circle2{
+        opacity:100
+    }
+
     #aboutus h1 {
         margin-bottom: 5%;
     }
@@ -224,6 +242,7 @@ footer .row1 p {
         text-align: center;
     }
     #aboutus .circle {
+        opacity: 0;
         width: 0px;
         height: 0px;
     }
@@ -241,9 +260,14 @@ footer .row1 p {
     }
 }
 
+#whatwedo{
+    background-color: #cadfdc;
+}
+
 /*whatwedo*/
 #whatwedo .container-fluid {
     padding: 7%;
+    background-color: #cadfdc;
 }
 
 #whatwedo img {
@@ -332,6 +356,10 @@ footer .row1 p {
 /*FAQ*/
 #FAQ .container-fluid {
     padding: 7%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #cadfdc;
 }
 
 #FAQ h1 {

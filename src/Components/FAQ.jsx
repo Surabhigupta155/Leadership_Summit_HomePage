@@ -28,6 +28,9 @@ export default function FAQ() {
 
   return (
     <div>
+       <section id="FAQ">
+                     <div className="container-fluid">
+
       <Button variant="outlined" onClick={handleClickOpen}>
         FAQs
       </Button>
@@ -60,6 +63,10 @@ export default function FAQ() {
         
         </DialogActions>
       </Dialog>
+      </div>
+      
+</section>
+
     </div>
   );
 }

@@ -43,14 +43,14 @@ export default function Timeline_() {
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                       <CardContent sx={{ flex: "1 0 auto" }}>
                         <Typography component="div" variant="h5">
-                          Live From Space
+                          21 October 2021
                         </Typography>
                         <Typography
                           variant="subtitle1"
                           color="text.secondary"
                           component="div"
                         >
-                          Mac Miller
+                         Registration Start Date
                         </Typography>
                       </CardContent>
                     </Box>
@@ -70,14 +70,14 @@ export default function Timeline_() {
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                       <CardContent sx={{ flex: "1 0 auto" }}>
                         <Typography component="div" variant="h5">
-                          Live From Space
+                        4 November 2021
                         </Typography>
                         <Typography
                           variant="subtitle1"
                           color="text.secondary"
                           component="div"
                         >
-                          Mac Miller
+                          Registration End Date
                         </Typography>
                       </CardContent>
                     </Box>
@@ -97,14 +97,14 @@ export default function Timeline_() {
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                       <CardContent sx={{ flex: "1 0 auto" }}>
                         <Typography component="div" variant="h5">
-                          Live From Space
+                        5 November 2021
                         </Typography>
                         <Typography
                           variant="subtitle1"
                           color="text.secondary"
                           component="div"
                         >
-                          Mac Miller
+                         Test 1
                         </Typography>
                       </CardContent>
                     </Box>
@@ -124,14 +124,68 @@ export default function Timeline_() {
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                       <CardContent sx={{ flex: "1 0 auto" }}>
                         <Typography component="div" variant="h5">
-                          Live From Space
+                        6 November 2021
                         </Typography>
                         <Typography
                           variant="subtitle1"
                           color="text.secondary"
                           component="div"
                         >
-                          Mac Miller
+                          Test 2
+                        </Typography>
+                      </CardContent>
+                    </Box>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot color="primary">
+                    <LaptopMacIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Card sx={{ maxWidth: 300,  display: "flex", }}>
+                    <Box sx={{ display: "flex", flexDirection: "column" }}>
+                      <CardContent sx={{ flex: "1 0 auto" }}>
+                        <Typography component="div" variant="h5">
+                        8-12 November 2021
+                        </Typography>
+                        <Typography
+                          variant="subtitle1"
+                          color="text.secondary"
+                          component="div"
+                        >
+                          Test 3
+                        </Typography>
+                      </CardContent>
+                    </Box>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineConnector />
+                  <TimelineDot color="primary">
+                    <LaptopMacIcon />
+                  </TimelineDot>
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Card sx={{ maxWidth: 300, float:'right', display: "flex", }}>
+                    <Box sx={{ display: "flex", flexDirection: "column" }}>
+                      <CardContent sx={{ flex: "1 0 auto" }}>
+                        <Typography component="div" variant="h5">
+                        Announcement of shortlisted candidates 
+                        </Typography>
+                        <Typography
+                          variant="subtitle1"
+                          color="text.secondary"
+                          component="div"
+                        >
+                          Test 3
                         </Typography>
                       </CardContent>
                     </Box>

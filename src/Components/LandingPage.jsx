@@ -28,7 +28,7 @@ export default function SectionHome() {
   return (
     <div className="heroimage">
         <div className="overlay">
-            <h1>Vidwan Sabha</h1>
+            <h1 className="text_hero">Vidwan Sabha</h1>
 
             <a href="#aboutus">
               <ArrowDownwardIcon fontSize={"large"} className="arrow bounce"/>

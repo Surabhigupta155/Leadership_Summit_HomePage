@@ -12,17 +12,18 @@ export default function AboutUs() {
                         <div className="row justify-content-center align-items-center">
                             <div className="col-lg-6">
                                 <ScrollAnimation animateIn="fadeInLeft">
-                                    <h1 >About Us</h1>
-                                    {/* <div class="circle">
-                                    </div> */}
+                                <h1 className="text_circle2">About Us</h1>
+                                    <div className="circle">
+                                    <h1 className="text_circle">About Us</h1>
+                                    </div>
                                 </ScrollAnimation>
                             </div>
                             <div className="col-lg-6">
                                 <ScrollAnimation animateIn="fadeInRight">
-                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                   <p>
+                                   Leadership conclave 2021 is a novel initiative by IIT Jammu which aims at bringing together some of the most illuminated thinkers and idea smiths across the nation to discuss and find the way forward towards the resolution of major modern-day problems faced by the global community. 
+                                   All the conclusions made in this two-day conclave will be carried forward by the participating leaders in such a way that they can bring about a revolution in the near future.
+                                   </p>
                                 </ScrollAnimation>
                             </div>
                         </div>
