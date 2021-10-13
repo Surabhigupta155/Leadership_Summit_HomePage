@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import '../Components.css';
-
+import axios from 'axios';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
@@ -28,6 +28,19 @@ export default function RegisterForm() {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [result, setResult] = useState("");
   const onSubmit = (data) =>{
+    console.log(data)
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: data
+  };
+  axios.post('http://localhost:4000/signup', data)
+  .then(response => alert(response))
+  .catch(error => {
+     alert(error)
+      console.error('There was an error!', error);
+  });
+
     setOpen(false);
     // setResult(JSON.stringify(data))
   };
@@ -49,12 +62,12 @@ export default function RegisterForm() {
         <DialogContent>
         <form onSubmit={handleSubmit(onSubmit)}>
      
-     <input {...register("firstName")} placeholder="First name" />
-     {errors.firstName && <p>This field is required</p>}
+     <input {...register("fullName")} placeholder="Full Name" />
+     {errors.fullName && <p>This field is required</p>}
 
-     <input {...register("lastName")} placeholder="Last name" />
-     <input {...register("contact")} placeholder="Contact Number" />
-     {errors.contact && <p>This field is required</p>}
+  
+     <input {...register("number")} placeholder="Contact Number" />
+     {errors.number && <p>This field is required</p>}
 
      <input {...register("email")} placeholder="Email" />
      {errors.email && <p>This field is required</p>}
@@ -69,14 +82,7 @@ export default function RegisterForm() {
        <option value="B">Category B</option>
      </select>
      <input type="submit" onClick={handleClose} />
-   
      
-          {/* <DialogContentText>
-            Let Google help apps determine location. This means sending anonymous
-            location data to Google, even when no apps are running.
-          </DialogContentText> */}
-       
-       
    </form>
    </DialogContent>
       </Dialog>
