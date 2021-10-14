@@ -22,6 +22,8 @@ export default function Timeline_() {
   return (
     <div>
       <section id="timeline">
+      <div className="design1"></div>
+      <div className="design2"></div>
         <div className="container-fluid">
           <ScrollAnimation animateIn="fadeInDown">
             <div className="text-center heading mb-lg-5 mb-md-5 mb-4">
@@ -39,16 +41,17 @@ export default function Timeline_() {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Card sx={{ display: "flex",float:'left', maxWidth: 300 }}>
+                  <Card sx={{ display: "flex",float:'left', maxWidth: 300 }} className="timelinecard">
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                       <CardContent sx={{ flex: "1 0 auto" }}>
-                        <Typography component="div" variant="h5">
+                        <Typography className="cardheading" component="div" variant="h5">
                           21 October 2021
                         </Typography>
                         <Typography
                           variant="subtitle1"
                           color="text.secondary"
                           component="div"
+                          className="content"
                         >
                          Registration Start Date
                         </Typography>
@@ -66,16 +69,17 @@ export default function Timeline_() {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Card sx={{ display: "flex", float:"right", maxWidth: 300 }}>
+                  <Card sx={{ display: "flex", float:"right", maxWidth: 300 }} className="timelinecard">
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                       <CardContent sx={{ flex: "1 0 auto" }}>
-                        <Typography component="div" variant="h5">
+                        <Typography className="cardheading" component="div" variant="h5">
                         4 November 2021
                         </Typography>
                         <Typography
                           variant="subtitle1"
                           color="text.secondary"
                           component="div"
+                          className="content"
                         >
                           Registration End Date
                         </Typography>
@@ -93,16 +97,17 @@ export default function Timeline_() {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Card sx={{ display: "flex",float:'left', maxWidth: 300 }}>
+                  <Card sx={{ display: "flex",float:'left', maxWidth: 300 }} className="timelinecard">
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                       <CardContent sx={{ flex: "1 0 auto" }}>
-                        <Typography component="div" variant="h5">
+                        <Typography className="cardheading" component="div" variant="h5">
                         5 November 2021
                         </Typography>
                         <Typography
                           variant="subtitle1"
                           color="text.secondary"
                           component="div"
+                          className="content"
                         >
                          Test 1
                         </Typography>
@@ -120,16 +125,17 @@ export default function Timeline_() {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Card sx={{ maxWidth: 300, float:'right', display: "flex", }}>
+                  <Card sx={{ maxWidth: 300, float:'right', display: "flex", }} className="timelinecard">
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                       <CardContent sx={{ flex: "1 0 auto" }}>
-                        <Typography component="div" variant="h5">
+                        <Typography className="cardheading" component="div" variant="h5">
                         6 November 2021
                         </Typography>
                         <Typography
                           variant="subtitle1"
                           color="text.secondary"
                           component="div"
+                          className="content"
                         >
                           Test 2
                         </Typography>
@@ -147,16 +153,17 @@ export default function Timeline_() {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Card sx={{ maxWidth: 300,  display: "flex", }}>
+                  <Card sx={{ maxWidth: 300,  display: "flex", }} className="timelinecard">
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                       <CardContent sx={{ flex: "1 0 auto" }}>
-                        <Typography component="div" variant="h5">
+                        <Typography className="cardheading" component="div" variant="h5">
                         8-12 November 2021
                         </Typography>
                         <Typography
                           variant="subtitle1"
                           color="text.secondary"
                           component="div"
+                          className="content"
                         >
                           Test 3
                         </Typography>
@@ -174,16 +181,17 @@ export default function Timeline_() {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Card sx={{ maxWidth: 300, float:'right', display: "flex", }}>
+                  <Card sx={{ maxWidth: 300, float:'right', display: "flex", }} className="timelinecard">
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                       <CardContent sx={{ flex: "1 0 auto" }}>
-                        <Typography component="div" variant="h5">
+                        <Typography className="cardheading" component="div" variant="h5">
                         Announcement of shortlisted candidates 
                         </Typography>
                         <Typography
                           variant="subtitle1"
                           color="text.secondary"
                           component="div"
+                          className="content"
                         >
                           Test 3
                         </Typography>

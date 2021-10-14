@@ -8,6 +8,7 @@ export default function WhatWeDo() {
   return (
     <div>
       <section id="whatwedo">
+        <div className="design1"></div>
         <div className="container-fluid">
           <div className="row justify-content-center align-items-center">
             <div className="col-lg-6">

@@ -53,6 +53,7 @@ export default function Theme() {
     <div>
 
       <section id="theme">
+        <div className="design1"></div>
         <div className="container-fluid">
           <div className="row justify-content-center align-items-center">
             <div className="col-lg-5">
@@ -70,7 +71,7 @@ export default function Theme() {
               <div className="row">
                 <div className="col-md-6 mb-4">
                   <ScrollAnimation animateIn="fadeInUp">
-                    <Card sx={{ maxWidth: 345 }}>
+                    <Card sx={{ maxWidth: 345 }} className="themecard">
                       <CardHeader
                         avatar={
                           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -113,7 +114,7 @@ What steps can be taken to mitigate these gaps and make skill development all th
                 </div>
                 <div className="col-md-6 mb-4">
                   <ScrollAnimation animateIn="fadeInUp">
-                    <Card sx={{ maxWidth: 345 }}>
+                    <Card sx={{ maxWidth: 345 }} className="themecard">
                       <CardHeader
                         avatar={
                           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -153,7 +154,7 @@ What steps can be taken to mitigate these gaps and make skill development all th
                 </div>
                 <div className="col-md-6 mb-4">
                   <ScrollAnimation animateIn="fadeInUp">
-                    <Card sx={{ maxWidth: 345 }}>
+                    <Card sx={{ maxWidth: 345 }} className="themecard">
                       <CardHeader
                         avatar={
                           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
@@ -193,7 +194,7 @@ What steps can be taken to mitigate these gaps and make skill development all th
                 </div>
                 <div className="col-md-6">
                   <ScrollAnimation animateIn="fadeInUp">
-                    <Card sx={{ maxWidth: 345 }}>
+                    <Card sx={{ maxWidth: 345 }} className="themecard">
                       <CardHeader
                         avatar={
                           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

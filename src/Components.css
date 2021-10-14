@@ -75,10 +75,31 @@ footer .row1 p {
 #Team .heading {
     font-size: calc(100% + 1.5vw + 1.5vh);
     font-weight: 600;
+    color: rgb(1, 1, 87);
+    text-shadow: 2px 2px darkgray;
+    font-family: 'Lobster Two', cursive;
 }
 
 #Team .container-fluid {
     padding: 2% 13%;
+}
+
+#Team .design1{
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(250, 198, 232);
+    border-radius: 50% 10%;
+    box-shadow: 0 2px 2px 2px gray;
+}
+
+#Team .design2{
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(250, 198, 232);
+    border-radius: 10% 50%;
+    box-shadow: 0 2px 2px 2px gray;
 }
 
 #Team .card {
@@ -87,6 +108,28 @@ footer .row1 p {
 
 #Team .card-body {
     background-color: lightgray;
+}
+
+@media screen and (max-width: 992px) {
+    #Team .design1{
+        width: 0px;
+        height: 0px;
+    }
+    #Team .design2{
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #Team .design1 {
+        width: 80px;
+        height: 80px;
+    }
+    #Team .design2 {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -100,6 +143,30 @@ footer .row1 p {
     overflow-x: hidden;
 }
 
+#timeline .timelinecard {
+    border: 1px solid gray; 
+    background: linear-gradient(225deg, rgb(250, 198, 232) 0%, #7cd4c7 100%);
+    box-shadow: 3px 3px 3px gray;
+}
+
+#timeline .design1{
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-color: #7cd4c7;
+    border-radius: 50% 10%;
+    box-shadow: 0 2px 2px 2px gray;
+}
+
+#timeline .design2{
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: #7cd4c7;
+    border-radius: 10% 50%;
+    box-shadow: 0 2px 2px 2px gray;
+}
+
 #timeline .container-fluid {
     padding: 4% 7% 7% 7%;
     background-color: #cadfdc;
@@ -109,18 +176,52 @@ footer .row1 p {
 #timeline .heading {
     font-size: calc(100% + 1.5vw + 1.5vh);
     font-weight: 600;
+    color: rgb(1, 1, 87);
+    text-shadow: 2px 2px darkgray;
+    font-family: 'Lobster Two', cursive;
 }
 
 #timeline img {
     width: 70%;
 }
 
+#timeline .cardheading {
+    font-size: calc(100% + 0.2vw + 0.2vh);
+}
+
+#timeline .content {
+    font-size: calc(90% + 0.1vw + 0.1vh);
+}
+
 @media screen and (max-width: 992px) {
     #timeline .row {
         padding-left: 10%;
     }
+    #timeline .design1 {
+        height: 0;
+        width: 0;
+    }
+    #timeline .design2 {
+        height: 0;
+        width: 0;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
     #timeline .container-fluid {
         padding: 7%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #timeline .design1 {
+        width: 80px;
+        height: 80px;
+    }
+    #timeline .design2 {
+        width: 80px;
+        height: 80px;
     }
 }
 
@@ -130,6 +231,9 @@ footer .row1 p {
     }
     .col2 {
         margin-right: -20%;
+    }
+    .container-fluid {
+        padding: 7% 0%;
     }
 }
 
@@ -207,6 +311,9 @@ footer .row1 p {
 #aboutus h1 {
     font-size: calc(100% + 1.5vw + 1.5vh);
     font-weight: 600;
+    color: rgb(1, 1, 87);
+    text-shadow: 2px 2px darkgray;
+    font-family: 'Lobster Two', cursive;
 }
 
 #aboutus p {
@@ -230,9 +337,12 @@ footer .row1 p {
 #aboutus h1{
    margin-left: 25%;
 }
+
 @media screen and (max-width: 992px) {
     #aboutus .text_circle2{
-        opacity:100
+        opacity:100;
+        margin-left: 0;
+        text-align: center;
     }
 
     #aboutus h1 {
@@ -270,6 +380,15 @@ footer .row1 p {
     background-color: #cadfdc;
 }
 
+#whatwedo .design1 {
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-color: #7cd4c7;
+    border-radius: 50% 10%;
+    box-shadow: 0 2px 2px 2px gray;
+}
+
 #whatwedo img {
     width: 80%;
     margin-left: 10%;
@@ -278,6 +397,9 @@ footer .row1 p {
 #whatwedo h1 {
     font-size: calc(100% + 1.5vw + 1.5vh);
     font-weight: 600;
+    color: rgb(1, 1, 87);
+    text-shadow: 2px 2px darkgray;
+    font-family: 'Lobster Two', cursive;
 }
 
 #whatwedo p {
@@ -290,6 +412,17 @@ footer .row1 p {
     #whatwedo p {
         text-align: center;
     }
+    #whatwedo .design1 {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #whatwedo .design1 {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 /*theme*/
@@ -297,9 +430,26 @@ footer .row1 p {
     padding: 7%;
 }
 
+#theme .themecard {
+    box-shadow: 0 1px 1px 1px gray;
+}
+
+#theme .design1 {
+    float: right;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(250, 198, 232);
+    border-radius: 50% 10%;
+    box-shadow: 0 2px 2px 2px gray;
+}
+
 #theme h1 {
     font-size: calc(100% + 1.5vw + 1.5vh);
     font-weight: 600;
+    color: rgb(1, 1, 87);
+    text-shadow: 2px 2px darkgray;
+    font-family: 'Lobster Two', cursive;
+    
 }
 
 #theme p {
@@ -323,9 +473,21 @@ footer .row1 p {
     #theme p {
         text-align: center;
     }
+    #theme .design1 {
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #theme .design1 {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 /*registeration form*/
+
 #regsform .container-fluid {
     padding: 7%;
 }
@@ -365,6 +527,9 @@ footer .row1 p {
 #FAQ h1 {
     font-size: calc(100% + 1.5vw + 1.5vh);
     font-weight: 600;
+    color: rgb(1, 1, 87);
+    text-shadow: 2px 2px darkgray;
+    font-family: 'Lobster Two', cursive;
 }
 
 #FAQ p {
