@@ -19,11 +19,8 @@ export default function WhatWeDo() {
             <div className="col-lg-6">
               <ScrollAnimation animateIn="fadeInRight">
                 <h1 className="text-center mb-lg-4 mb-md-4 mb-3">What We Do</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p>Leadership conclave 2021 is a novel initiative by IIT Jammu which aims at bringing together some of the most illuminated thinkers and idea smiths across the nation to discuss and find the way forward towards the resolution of major modern-day problems faced by the global community. All the conclusions made in this two-day conclave will be carried forward by the participating leaders in such a way that they can bring about a revolution in the near future.
+ </p>
               </ScrollAnimation>
             </div>
           </div>

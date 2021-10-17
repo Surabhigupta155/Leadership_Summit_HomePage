@@ -15,6 +15,7 @@ import card from '../images/card.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import SectionHome from './LandingPage';
 import AboutUs from './AboutUs';
+import AboutIIT from './AboutIIT';
 import WhatWeDo from './WhatWeDo';
 import Theme from './Theme';
 import Team from './Team';
@@ -27,6 +28,7 @@ export default function Herobg() {
         <div>
             <div class="hero-image">
             <SectionHome/>
+            <AboutIIT/>
             <AboutUs />
             <WhatWeDo />
             <Theme/>

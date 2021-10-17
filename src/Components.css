@@ -464,6 +464,7 @@ footer .row1 p {
 
 #theme .agendadesc {
     font-size: calc(80% + 0.1vw + 0.1vh);
+    
 }
 
 @media screen and (max-width: 992px) {

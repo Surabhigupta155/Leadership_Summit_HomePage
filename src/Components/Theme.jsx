@@ -13,6 +13,7 @@ import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
+import Paper from "@mui/material/Paper";
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -61,7 +62,8 @@ export default function Theme() {
                 <h1 className="mb-lg-4 mb-md-4 mb-3">Theme and Agendas</h1>
               </ScrollAnimation>
               <ScrollAnimation animateIn="fadeInUp">
-                <p className="mb-lg-0 mb-md-5 mb-4">The theme for this year will be “Inclusive development”. In the modern day world, where the entire globe is working on sustainable development and finding solutions to humanity as a whole, we somehow leave behind a few marginalised sections of the society. Marginalized people are individuals excluded from society. Marginalization has made the people fall into pits of exclusion and developmental lag, which have to be reflected, and innovative measures have to be enforced through social democracy, which rest on justice, liberty, equality and fraternity. There are a variety of reasons as to why these sections remain marginalized, ranging from social stigma, to economic disparity, to  historic subjugation. Inclusion means mainstreaming them into current developmental initiatives of the society. Here we invite leaders to deliberate over the problem of selective development of a few sections of the society and find innovative paths to achieve the goal of inclusive development.
+                <p className="mb-lg-0 mb-md-5 mb-4">The theme for this year will be “Inclusive development”. Marginalization has made the people fall into pits of exclusion and developmental lag, which have to be reflected, and innovative measures have to be enforced through social democracy, which rest on justice, liberty, equality and fraternity. Here we invite leaders to deliberate over the problem of selective development of a few sections of the society and find innovative paths to achieve the goal of inclusive development.
+
                 </p>
                 <br />
                 <RegisterForm/>
@@ -99,14 +101,15 @@ export default function Theme() {
                         alt="Paella dish"
                       />
                       <Collapse in={expanded1} timeout="auto" unmountOnExit>
-                        <CardContent>
-                          {/* <Typography className="agenda" paragraph>Method:</Typography> */}
+                        <CardContent style={{ maxHeight: 200, overflow: "auto" }}>
+                   
+           
                           <Typography className="agendadesc" paragraph>
-                          Certain groups of people are being excluded from opportunities for skills development, at the same time opportunities to develop certain skills are largely lacking 
-Even after skills are acquired, there is a disparity in the wages, pays and respect for certain skills which are considered inferior 
-What steps can be taken to mitigate these gaps and make skill development all the more inclusive
+                          Certain groups of people are being excluded from opportunities for skills development, at the same time opportunities to develop certain skills are largely lacking. Even after skills are acquired, there is a disparity in the wages, pays and respect for certain skills which are considered inferior.
+
 
                           </Typography>
+                     
                         </CardContent>
                       </Collapse>
                     </Card>
@@ -142,11 +145,14 @@ What steps can be taken to mitigate these gaps and make skill development all th
                         alt="Paella dish"
                       />
                       <Collapse in={expanded2} timeout="auto" unmountOnExit>
-                        <CardContent>
+                        <CardContent style={{ maxHeight: 200, overflow: "auto" , border:"0"}}>
                           {/* <Typography className="agenda" paragraph>Method:</Typography> */}
+                         
                           <Typography className="agendadesc" paragraph>
-                          Inclusive Development refers to improving the distribution of amenities like health, education, infrastructure, etc., intending to enable participation from all sections of society. It is a well-known fact that massive measures are being taken for the holistic development of the marginalized communities, economically & socially backward classes, and the welfare of women. While we tend to emphasize the specific neglected groups, we often overlook the bigger picture. On scratching beyond the surface, we often find that inclusion is not that inclusive. For some groups like PwD, Senior Citizens, LGBTQ+, etc., the exclusion is omnipresent. It’s endemic and it’s systemic. What can the student leaders do to flip the face of this prevalent situation?
-                          </Typography>
+                          While we tend to emphasize the specific neglected groups for development, we often overlook the bigger picture. For some groups like PwD, Senior Citizens, LGBTQ+, etc., the exclusion is omnipresent. It’s endemic and it’s systemic.
+                              </Typography>
+                        
+                        
                         </CardContent>
                       </Collapse>
                     </Card>
@@ -182,11 +188,11 @@ What steps can be taken to mitigate these gaps and make skill development all th
                         alt="Paella dish"
                       />
                       <Collapse in={expanded3} timeout="auto" unmountOnExit>
-                        <CardContent>
+                        <CardContent style={{ maxHeight: 200, overflow: "auto" }}>
                           {/* <Typography className="agenda" paragraph>Method:</Typography> */}
                           <Typography className="agendadesc" paragraph>
-                          Health disparities have garnered an increasing amount of attention since the start of the pandemic. Due to the multifactorial construct of our society, the healthcare facilities are not accessible for a myriad of reasons to all the segments of the society. The situations are dire to an extent that there is the availability of only a single doctor for a population of thousands. These disparities not only compromise the wellness of people but also creates moral and ethical dilemmas for the healthcare system globally. What changes in the system do you suggest to overcome these issues?
-                          </Typography>
+                          Health disparities have garnered an increasing amount of attention since the start of the pandemic. The healthcare facilities are not accessible for a myriad of reasons to all the segments of the society. The situations are dire to an extent that there is the availability of only a single doctor for a population of thousands.
+                           </Typography>
                         </CardContent>
                       </Collapse>
                     </Card>
@@ -222,7 +228,7 @@ What steps can be taken to mitigate these gaps and make skill development all th
                         alt="Paella dish"
                       />
                       <Collapse in={expanded4} timeout="auto" unmountOnExit>
-                        <CardContent>
+                        <CardContent style={{ maxHeight: 200, overflow: "auto" }}>
                           {/* <Typography className="agenda" paragraph>Method:</Typography> */}
                           <Typography className="agendadesc" paragraph>
                           The Indian Education system has failed to serve the 150 million children that are currently out of the education system, and hundreds of millions of students that are in the system but are greatly deprived of the global minium standards of education, be it the infrastructure or the curriculum. This is due to the blatant disregard to the problems in our education system, that we've been unable to address let alone resolve for years now, and this is just the right time to change this reality by first addressing and discussing the problems. It might be only fair if we subject your critical, rational and diverse thoughts to this problem which will hopefully yield to solutions that would help us to realise what we are imagining.
