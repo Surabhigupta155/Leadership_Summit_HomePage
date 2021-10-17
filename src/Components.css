@@ -1,3 +1,6 @@
+body {
+    font-family: 'Cardo', serif;
+   }
 /*navbar*/
 nav {
     box-shadow: 0 0 5px gray;
@@ -75,9 +78,11 @@ footer .row1 p {
 #Team .heading {
     font-size: calc(100% + 1.5vw + 1.5vh);
     font-weight: 600;
-    color: rgb(1, 1, 87);
+    /* color: rgb(1, 1, 87); */
     text-shadow: 2px 2px darkgray;
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+
 }
 
 #Team .container-fluid {
@@ -144,9 +149,9 @@ footer .row1 p {
 }
 
 #timeline .timelinecard {
-    border: 1px solid gray; 
-    background: linear-gradient(225deg, rgb(250, 198, 232) 0%, #7cd4c7 100%);
-    box-shadow: 3px 3px 3px gray;
+    border: 0px solid gray; 
+    /* background: linear-gradient(225deg, rgb(250, 198, 232) 0%, #7cd4c7 100%); */
+    box-shadow: 0px 3px 3px gray;
 }
 
 #timeline .design1{
@@ -176,9 +181,10 @@ footer .row1 p {
 #timeline .heading {
     font-size: calc(100% + 1.5vw + 1.5vh);
     font-weight: 600;
-    color: rgb(1, 1, 87);
+    /* color: rgb(1, 1, 87); */
     text-shadow: 2px 2px darkgray;
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
 #timeline img {
@@ -311,9 +317,10 @@ footer .row1 p {
 #aboutus h1 {
     font-size: calc(100% + 1.5vw + 1.5vh);
     font-weight: 600;
-    color: rgb(1, 1, 87);
+    /* color: rgb(1, 1, 87); */
     text-shadow: 2px 2px darkgray;
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
 #aboutus p {
@@ -397,9 +404,10 @@ footer .row1 p {
 #whatwedo h1 {
     font-size: calc(100% + 1.5vw + 1.5vh);
     font-weight: 600;
-    color: rgb(1, 1, 87);
+    /* color: rgb(1, 1, 87); */
     text-shadow: 2px 2px darkgray;
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
 #whatwedo p {
@@ -446,9 +454,10 @@ footer .row1 p {
 #theme h1 {
     font-size: calc(100% + 1.5vw + 1.5vh);
     font-weight: 600;
-    color: rgb(1, 1, 87);
+    /* color: rgb(1, 1, 87); */
     text-shadow: 2px 2px darkgray;
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
     
 }
 
@@ -528,9 +537,10 @@ footer .row1 p {
 #FAQ h1 {
     font-size: calc(100% + 1.5vw + 1.5vh);
     font-weight: 600;
-    color: rgb(1, 1, 87);
+    /* color: rgb(1, 1, 87); */
     text-shadow: 2px 2px darkgray;
-    font-family: 'Lobster Two', cursive;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
 }
 
 #FAQ p {

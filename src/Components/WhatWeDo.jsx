@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import '../Components.css';
-import card from '../images/card.jpg';
+import card from '../images/what.jpg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Grid from "@material-ui/core/Grid";
 export default function WhatWeDo() {
@@ -13,7 +13,7 @@ export default function WhatWeDo() {
           <div className="row justify-content-center align-items-center">
             <div className="col-lg-6">
               <ScrollAnimation animateIn="fadeInLeft">
-                <img className="mb-lg-0 mb-4" src={card} alt="" />
+                <img className="mb-lg-0 mb-4" src={card} alt="" style={{borderRadius:"50%"}} />
               </ScrollAnimation>
             </div>
             <div className="col-lg-6">

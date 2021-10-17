@@ -18,7 +18,10 @@ import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import RegisterForm from './Register'
-
+import image1 from "../images/skill.jpg"
+import image2 from "../images/senior.jpg"
+import image3 from "../images/health.jpg"
+import image4 from "../images/school.jpg"
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -97,7 +100,7 @@ export default function Theme() {
                       <CardMedia
                         component="img"
                         height="194"
-                        image="https://c8.alamy.com/comp/HWEDTX/rectangularrectangular-shaperectangle-shapewhitewhite-backgroundb-HWEDTX.jpg"
+                        image={image1}
                         alt="Paella dish"
                       />
                       <Collapse in={expanded1} timeout="auto" unmountOnExit>
@@ -141,7 +144,7 @@ export default function Theme() {
                       <CardMedia
                         component="img"
                         height="194"
-                        image="https://c8.alamy.com/comp/HWEDTX/rectangularrectangular-shaperectangle-shapewhitewhite-backgroundb-HWEDTX.jpg"
+                        image={image2}
                         alt="Paella dish"
                       />
                       <Collapse in={expanded2} timeout="auto" unmountOnExit>
@@ -184,7 +187,7 @@ export default function Theme() {
                       <CardMedia
                         component="img"
                         height="194"
-                        image="https://c8.alamy.com/comp/HWEDTX/rectangularrectangular-shaperectangle-shapewhitewhite-backgroundb-HWEDTX.jpg"
+                        image={image3}
                         alt="Paella dish"
                       />
                       <Collapse in={expanded3} timeout="auto" unmountOnExit>
@@ -224,7 +227,7 @@ export default function Theme() {
                       <CardMedia
                         component="img"
                         height="194"
-                        image="https://c8.alamy.com/comp/HWEDTX/rectangularrectangular-shaperectangle-shapewhitewhite-backgroundb-HWEDTX.jpg"
+                        image={image4}
                         alt="Paella dish"
                       />
                       <Collapse in={expanded4} timeout="auto" unmountOnExit>

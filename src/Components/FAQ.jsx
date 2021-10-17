@@ -3,7 +3,7 @@ import * as React from 'react';
 import '../Components.css';
 
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import { saveAs } from "file-saver";
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -25,12 +25,18 @@ export default function FAQ() {
   const handleClose = () => {
     setOpen(false);
   };
-
+  const saveFile = () => {
+    saveAs(
+      "./AboutUs.pdf",
+      "example.pdf"
+    );
+  };
   return (
     <div>
        <section id="FAQ">
                      <div className="container-fluid">
-
+                     <div className="row justify-content-center align-items-center">
+                     <div className="col-lg-6">
       <Button variant="outlined" onClick={handleClickOpen}>
         FAQs
       </Button>
@@ -45,14 +51,14 @@ export default function FAQ() {
         </DialogTitle>
         <DialogContent>
           <DialogContentText>
-          <p className="mb-2">Q. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p>Ans. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p className="mb-2">Q. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p>Ans. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p className="mb-2">Q. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p>Ans. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p className="mb-2">Q. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <p>Ans. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p className="mb-2"> <strong>Q.</strong> What will I get by participating in this conclave?</p>
+          <p><strong>Ans.</strong> You will be getting an exciting hamper from IIT Jammu. Beside this you will be getting a certificate of appreciation from IIT Jammu.</p>
+          <p className="mb-2"><strong>Q.</strong> Is there any registration fee?</p>
+          <p><strong>Ans.</strong> No, the registration is free of cost.</p>
+          <p className="mb-2"><strong>Q.</strong> How will the participants be shortlisted for the summit?</p>
+          <p><strong>Ans.</strong> The participants will have to appear for a 3-stage assessment test. </p>
+          <p className="mb-2"><strong>Q.</strong> Will the event be held online or offline?</p>
+          <p><strong>Ans.</strong> The event will be held online.</p>
                                                                
           </DialogContentText>
         </DialogContent>
@@ -63,8 +69,17 @@ export default function FAQ() {
         
         </DialogActions>
       </Dialog>
+     
       </div>
-      
+      <div className="col-lg-6">
+      <Button variant="outlined" onClick={saveFile}>
+        Brochure
+      {/* <a href='AboutUs.pdf' download  style={{ color: 'inherit', textDecoration:"none" }}> Brochure</a>
+        */}
+      </Button>
+      </div>  
+      </div>
+      </div>
 </section>
 
     </div>

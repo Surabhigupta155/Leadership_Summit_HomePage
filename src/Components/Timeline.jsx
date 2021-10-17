@@ -125,7 +125,7 @@ export default function Timeline_() {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Card sx={{ maxWidth: 300, float:'right', display: "flex", }} className="timelinecard">
+                  <Card sx={{ float:'right', display: "flex",maxWidth: 300,  }} className="timelinecard">
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                       <CardContent sx={{ flex: "1 0 auto" }}>
                         <Typography className="cardheading" component="div" variant="h5">
@@ -153,7 +153,7 @@ export default function Timeline_() {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Card sx={{ maxWidth: 300,  display: "flex", }} className="timelinecard">
+                  <Card sx={{   display: "flex",maxWidth: 300,float:'left', }} className="timelinecard">
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                       <CardContent sx={{ flex: "1 0 auto" }}>
                         <Typography className="cardheading" component="div" variant="h5">
@@ -181,11 +181,11 @@ export default function Timeline_() {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Card sx={{ maxWidth: 300, float:'right', display: "flex", }} className="timelinecard">
+                  <Card sx={{  float:'right', display: "flex",maxWidth: 300, }} className="timelinecard">
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
                       <CardContent sx={{ flex: "1 0 auto" }}>
                         <Typography className="cardheading" component="div" variant="h5">
-                        Announcement of shortlisted candidates 
+                        12 November 2021
                         </Typography>
                         <Typography
                           variant="subtitle1"
@@ -193,7 +193,7 @@ export default function Timeline_() {
                           component="div"
                           className="content"
                         >
-                          Test 3
+                         Announcement of shortlisted candidates  
                         </Typography>
                       </CardContent>
                     </Box>
