@@ -89,24 +89,6 @@ footer .row1 p {
     padding: 2% 13%;
 }
 
-#Team .design1{
-    float: right;
-    width: 100px;
-    height: 100px;
-    background-color: rgb(250, 198, 232);
-    border-radius: 50% 10%;
-    box-shadow: 0 2px 2px 2px gray;
-}
-
-#Team .design2{
-    float: left;
-    width: 100px;
-    height: 100px;
-    background-color: rgb(250, 198, 232);
-    border-radius: 10% 50%;
-    box-shadow: 0 2px 2px 2px gray;
-}
-
 #Team .card {
     box-shadow: 3px 3px 3px gray;
 }
@@ -115,31 +97,20 @@ footer .row1 p {
     background-color: lightgray;
 }
 
-@media screen and (max-width: 992px) {
-    #Team .design1{
-        width: 0px;
-        height: 0px;
-    }
-    #Team .design2{
-        width: 0px;
-        height: 0px;
-    }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    #Team .design1 {
-        width: 80px;
-        height: 80px;
-    }
-    #Team .design2 {
-        width: 80px;
-        height: 80px;
-    }
-}
-
 @media screen and (max-width: 576px) {
     #Team .heading {
         margin-top: 70px;
+    }
+}
+
+/*registration form*/
+#registrationform {
+    padding: 0 7% 7% 7%;
+}
+
+@media screen and (max-width: 992px) {
+    #registrationform {
+        padding: 7%;
     }
 }
 
@@ -152,24 +123,6 @@ footer .row1 p {
     border: 0px solid gray; 
     /* background: linear-gradient(225deg, rgb(250, 198, 232) 0%, #7cd4c7 100%); */
     box-shadow: 0px 3px 3px gray;
-}
-
-#timeline .design1{
-    float: right;
-    width: 100px;
-    height: 100px;
-    background-color: #7cd4c7;
-    border-radius: 50% 10%;
-    box-shadow: 0 2px 2px 2px gray;
-}
-
-#timeline .design2{
-    float: left;
-    width: 100px;
-    height: 100px;
-    background-color: #7cd4c7;
-    border-radius: 10% 50%;
-    box-shadow: 0 2px 2px 2px gray;
 }
 
 #timeline .container-fluid {
@@ -203,31 +156,11 @@ footer .row1 p {
     #timeline .row {
         padding-left: 10%;
     }
-    #timeline .design1 {
-        height: 0;
-        width: 0;
-    }
-    #timeline .design2 {
-        height: 0;
-        width: 0;
-    }
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     #timeline .container-fluid {
         padding: 7%;
-    }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    #timeline .design1 {
-        width: 80px;
-        height: 80px;
-    }
-    #timeline .design2 {
-        width: 80px;
-        height: 80px;
     }
 }
 
@@ -272,11 +205,11 @@ footer .row1 p {
 .heroimage {
     height: 100vh;
     width: auto;
-  
     margin: auto;
     background-size:cover; 
-    background-position: centre;
     background-image: url("./images/Leadership.jpg");
+    background-position: center center;
+    background-attachment: fixed;
   }
 
   .overlay{
@@ -345,6 +278,28 @@ footer .row1 p {
    margin-left: 25%;
 }
 
+#aboutus .floatinglogo {
+    animation-name: floatinglogo;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out ease-in-out;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@keyframes floatinglogo {
+    from {
+      -webkit-transform: translate(0, 0px);
+    }
+    45% {
+      -webkit-transform: translate(0, 20px);
+    }
+    to {
+      -webkit-transform: translate(0, -0px);
+    }
+  }
+
 @media screen and (max-width: 992px) {
     #aboutus .text_circle2{
         opacity:100;
@@ -387,15 +342,6 @@ footer .row1 p {
     background-color: #cadfdc;
 }
 
-#whatwedo .design1 {
-    float: right;
-    width: 100px;
-    height: 100px;
-    background-color: #7cd4c7;
-    border-radius: 50% 10%;
-    box-shadow: 0 2px 2px 2px gray;
-}
-
 #whatwedo img {
     width: 80%;
     margin-left: 10%;
@@ -420,17 +366,6 @@ footer .row1 p {
     #whatwedo p {
         text-align: center;
     }
-    #whatwedo .design1 {
-        width: 0px;
-        height: 0px;
-    }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    #whatwedo .design1 {
-        width: 80px;
-        height: 80px;
-    }
 }
 
 /*theme*/
@@ -440,15 +375,6 @@ footer .row1 p {
 
 #theme .themecard {
     box-shadow: 0 1px 1px 1px gray;
-}
-
-#theme .design1 {
-    float: right;
-    width: 100px;
-    height: 100px;
-    background-color: rgb(250, 198, 232);
-    border-radius: 50% 10%;
-    box-shadow: 0 2px 2px 2px gray;
 }
 
 #theme h1 {
@@ -482,17 +408,6 @@ footer .row1 p {
     }
     #theme p {
         text-align: center;
-    }
-    #theme .design1 {
-        width: 0px;
-        height: 0px;
-    }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    #theme .design1 {
-        width: 80px;
-        height: 80px;
     }
 }
 

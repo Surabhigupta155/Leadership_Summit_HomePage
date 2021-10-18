@@ -57,7 +57,6 @@ export default function Theme() {
     <div>
 
       <section id="theme">
-        <div className="design1"></div>
         <div className="container-fluid">
           <div className="row justify-content-center align-items-center">
             <div className="col-lg-5">
@@ -69,7 +68,6 @@ export default function Theme() {
 
                 </p>
                 <br />
-                <RegisterForm/>
               </ScrollAnimation>
             </div>
             <div className="col-lg-7">

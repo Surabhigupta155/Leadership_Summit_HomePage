@@ -32,7 +32,7 @@ export default function Herobg() {
             <AboutUs />
             <WhatWeDo />
             <Theme/>
-            {/* <RegisterForm/> */}
+            <RegisterForm/>
             <Timeline_ />
             <Team />
             

@@ -5,6 +5,7 @@ import SectionHome from './LandingPage';
 import AboutUs from './AboutUs';
 import Theme from './Theme';
 import Team from './Team';
+import leader1 from '../images/leader1.png';
 import '../Components.css';
 
 export default function Header() {
@@ -23,7 +24,7 @@ export default function Header() {
         <div>
             <nav className= {colorChange ? 'navbar colorChange navbar-expand-lg navbar-light fixed-top px-md-5' : 'navbar navbar-expand-lg navbar-light fixed-top px-md-5'}>
                 <div className="container-fluid py-0 px-lg-0 px-md-0 px-3">
-                    <Link className="navbar-brand" to="/">Leadership Summit</Link>
+                    <Link className="navbar-brand" to="/"><img src={leader1} width="80px"/></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>

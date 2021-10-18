@@ -6,8 +6,6 @@ export default function Team() {
     return (
         <div>
             <section id="Team">
-                <div className="design1"></div>
-                <div className="design2"></div>
                 <div className="container-fluid">
                     <ScrollAnimation animateIn="fadeInDown">
                         <div className="text-center heading mb-lg-5 mb-md-5 mb-4">Our Team</div>
