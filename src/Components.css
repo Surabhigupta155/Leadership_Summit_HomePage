@@ -24,11 +24,19 @@ nav .nav-item {
     font-size: calc(100% + 0.1vw + 0.1vh);
     font-weight: 600;
     transition: 0.3s ease-in-out; 
+    text-decoration: none;
 }
 
 .nav-item:hover {
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     border-radius: 100% 50%;
+    padding: 10px;
+}
+
+.active {
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    border-radius: 100% 50%;
+    padding: 10px;
 }
 
 /* footer*/
@@ -111,12 +119,12 @@ footer .row1 p {
 
 /*registration form*/
 #registrationform {
-    padding: 0 7% 7% 7%;
+    padding: 10% 7%;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     #registrationform {
-        padding: 7%;
+        padding-top: 10%;
     }
 }
 

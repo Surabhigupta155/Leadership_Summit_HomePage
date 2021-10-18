@@ -1,6 +1,7 @@
 import * as React from 'react';
 import leader1 from '../images/leader1.png';
 import '../Components.css';
+import Header from './Header.js';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 

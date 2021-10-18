@@ -51,8 +51,8 @@ export default function RegisterForm() {
   };
 
   return (
-    <div className="row text-center mx-0">
-      <div id="registrationform">
+    <div id="registrationform" className="row text-center mx-0">
+      <div>
         <Button className="mb-lg-0 mb-md-5 mb-5" variant="outlined" onClick={handleClickOpen}>
           Registration Form
         </Button>
