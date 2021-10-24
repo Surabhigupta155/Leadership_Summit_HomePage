@@ -1,24 +1,31 @@
 {
   "files": {
-    "main.css": "/Leadership_Summit_HomePage/static/css/main.f8ff7f60.chunk.css",
-    "main.js": "/Leadership_Summit_HomePage/static/js/main.0fb50692.chunk.js",
-    "main.js.map": "/Leadership_Summit_HomePage/static/js/main.0fb50692.chunk.js.map",
-    "runtime-main.js": "/Leadership_Summit_HomePage/static/js/runtime-main.f77ac97d.js",
-    "runtime-main.js.map": "/Leadership_Summit_HomePage/static/js/runtime-main.f77ac97d.js.map",
-    "static/js/2.e1043f35.chunk.js": "/Leadership_Summit_HomePage/static/js/2.e1043f35.chunk.js",
-    "static/js/2.e1043f35.chunk.js.map": "/Leadership_Summit_HomePage/static/js/2.e1043f35.chunk.js.map",
-    "static/js/3.a9417cab.chunk.js": "/Leadership_Summit_HomePage/static/js/3.a9417cab.chunk.js",
-    "static/js/3.a9417cab.chunk.js.map": "/Leadership_Summit_HomePage/static/js/3.a9417cab.chunk.js.map",
+    "main.css": "/Leadership_Summit_HomePage/static/css/main.21ccf044.chunk.css",
+    "main.js": "/Leadership_Summit_HomePage/static/js/main.53f6e5e2.chunk.js",
+    "main.js.map": "/Leadership_Summit_HomePage/static/js/main.53f6e5e2.chunk.js.map",
+    "runtime-main.js": "/Leadership_Summit_HomePage/static/js/runtime-main.67279c61.js",
+    "runtime-main.js.map": "/Leadership_Summit_HomePage/static/js/runtime-main.67279c61.js.map",
+    "static/js/2.b92255d0.chunk.js": "/Leadership_Summit_HomePage/static/js/2.b92255d0.chunk.js",
+    "static/js/2.b92255d0.chunk.js.map": "/Leadership_Summit_HomePage/static/js/2.b92255d0.chunk.js.map",
+    "static/js/3.68495f1e.chunk.js": "/Leadership_Summit_HomePage/static/js/3.68495f1e.chunk.js",
+    "static/js/3.68495f1e.chunk.js.map": "/Leadership_Summit_HomePage/static/js/3.68495f1e.chunk.js.map",
     "index.html": "/Leadership_Summit_HomePage/index.html",
-    "static/css/main.f8ff7f60.chunk.css.map": "/Leadership_Summit_HomePage/static/css/main.f8ff7f60.chunk.css.map",
-    "static/js/2.e1043f35.chunk.js.LICENSE.txt": "/Leadership_Summit_HomePage/static/js/2.e1043f35.chunk.js.LICENSE.txt",
+    "static/css/main.21ccf044.chunk.css.map": "/Leadership_Summit_HomePage/static/css/main.21ccf044.chunk.css.map",
+    "static/js/2.b92255d0.chunk.js.LICENSE.txt": "/Leadership_Summit_HomePage/static/js/2.b92255d0.chunk.js.LICENSE.txt",
     "static/media/Components.css": "/Leadership_Summit_HomePage/static/media/Leadership.90bf207e.jpg",
-    "static/media/card.8c11b71e.jpg": "/Leadership_Summit_HomePage/static/media/card.8c11b71e.jpg"
+    "static/media/card.8c11b71e.jpg": "/Leadership_Summit_HomePage/static/media/card.8c11b71e.jpg",
+    "static/media/health.07aee154.jpg": "/Leadership_Summit_HomePage/static/media/health.07aee154.jpg",
+    "static/media/iit.8c35e7d9.jpg": "/Leadership_Summit_HomePage/static/media/iit.8c35e7d9.jpg",
+    "static/media/leader1.fa0eb381.png": "/Leadership_Summit_HomePage/static/media/leader1.fa0eb381.png",
+    "static/media/school.229690e0.jpg": "/Leadership_Summit_HomePage/static/media/school.229690e0.jpg",
+    "static/media/senior.6a2622fa.jpg": "/Leadership_Summit_HomePage/static/media/senior.6a2622fa.jpg",
+    "static/media/skill.cdd3d943.jpg": "/Leadership_Summit_HomePage/static/media/skill.cdd3d943.jpg",
+    "static/media/what.50450687.jpg": "/Leadership_Summit_HomePage/static/media/what.50450687.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f77ac97d.js",
-    "static/js/2.e1043f35.chunk.js",
-    "static/css/main.f8ff7f60.chunk.css",
-    "static/js/main.0fb50692.chunk.js"
+    "static/js/runtime-main.67279c61.js",
+    "static/js/2.b92255d0.chunk.js",
+    "static/css/main.21ccf044.chunk.css",
+    "static/js/main.53f6e5e2.chunk.js"
   ]
 }
